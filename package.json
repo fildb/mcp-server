@@ -1,0 +1,48 @@
+{
+  "name": "filo-data-broker-mcp",
+  "version": "0.3.0",
+  "description": "Filo Data Broker MCP Server",
+  "main": "index.js",
+  "bin": {
+    "fdb-mcp": "./bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node bin/index.js",
+    "dev": "npx @modelcontextprotocol/inspector node --watch bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ipfs",
+    "filecoin",
+    "server"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@filoz/synapse-sdk": "^0.15.0",
+    "@lighthouse-web3/kavach": "^0.2.1",
+    "@lighthouse-web3/sdk": "^0.4.0",
+    "@lit-protocol/auth-helpers": "^7.2.0",
+    "@lit-protocol/constants": "^7.2.0",
+    "@lit-protocol/encryption": "^7.2.0",
+    "@lit-protocol/lit-node-client-nodejs": "^7.2.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "alasql": "^4.6.6",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.6.0",
+    "ethers": "^6.15.0",
+    "lodash-es": "^4.17.21",
+    "sql.js": "^1.13.0",
+    "stream-transform": "^3.3.3",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
